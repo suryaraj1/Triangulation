@@ -11,7 +11,7 @@
   flex-direction: column;
   transition: 0.3s ease;
   justify-content: space-between;
-  border: 1px solid #efefef;
+  border: 1px solid #eaeaea;
 }
 
 .app-card-wrapper:hover {

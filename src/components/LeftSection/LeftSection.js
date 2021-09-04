@@ -6,7 +6,7 @@ import './LeftSection.css';
 const LeftSection = () => {
     return (
         <div className='left-section-wrapper'>
-            <Header />
+            <Header mainText="Triangulation" subText="A web app dedicated to triangles."/>
             <Footer />
         </div>
     )

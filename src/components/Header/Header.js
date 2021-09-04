@@ -1,11 +1,11 @@
 import React from 'react';
 import './Header.css';
 
-const Header = () => {
+const Header = ({mainText, subText}) => {
     return (
         <div className='header-wrapper'>
-            <p className='header-main'>Triangulation</p>
-            <p className='header-sub'>A web app dedicated to triangles.</p>
+            <p className='header-main'>{mainText}</p>
+            <p className='header-sub'>{subText}</p>
         </div>
     )
 }
