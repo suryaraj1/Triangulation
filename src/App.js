@@ -1,11 +1,13 @@
 import React from 'react';
 import './App.css';
-import Header from './components/Header/Header';
+import LeftSection from './components/LeftSection/LeftSection';
+import RightSection from './components/RightSection/RightSection';
 
 const App = () => {
     return (
         <div>
-            <Header />        
+            <LeftSection />  
+            <RightSection />      
         </div>
     )
 }
