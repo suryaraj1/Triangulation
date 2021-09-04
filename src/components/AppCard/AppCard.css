@@ -7,7 +7,7 @@
   border-radius: 5px;
   cursor: pointer;
   display: flex;
-  padding: 15px;
+  padding: 20px;
   flex-direction: column;
   transition: 0.3s ease;
   justify-content: space-between;
@@ -34,4 +34,10 @@
 .app-card-arrow-wrapper svg {
   height: 25px;
   width: 25px;
+  color: #b9bdcf;
+  transition: 0.4s ease;
+}
+
+.app-card-wrapper:hover svg {
+  color: #282538;
 }
