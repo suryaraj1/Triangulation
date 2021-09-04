@@ -1,13 +1,11 @@
 import React from 'react';
 import './App.css';
-import LeftSection from './components/LeftSection/LeftSection';
-import RightSection from './components/RightSection/RightSection';
+import HypotCalculator from './pages/HypotCalculator';
 
 const App = () => {
     return (
         <div>
-            <LeftSection />  
-            <RightSection />      
+            <HypotCalculator /> 
         </div>
     )
 }
