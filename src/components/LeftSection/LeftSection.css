@@ -1,0 +1,9 @@
+.left-section-wrapper {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  padding: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
