@@ -21,8 +21,8 @@ class Hint extends React.Component {
         const { isClicked } = this.state;
         return (
             <div className='hint-wrapper'>
-                <div className='hint-top-wrapper'>
-                    <p className='hint-top-text' onClick={this.onClickHandler}>🤔 Click to know how we are finding this?</p>
+                <div className='hint-top-wrapper'  onClick={this.onClickHandler}>
+                    <p className='hint-top-text'>🤔 Click to know how we are finding this</p>
                 </div>
                 {isClicked && (<div className='hint-bottom-wrapper'>
                     <div className='hint-img-wrapper'>
