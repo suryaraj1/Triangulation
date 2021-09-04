@@ -12,8 +12,33 @@ class HypotCalculator extends React.Component {
         this.state = {
             height: "",
             base: "",
-            hypotenuse: "",
+            hypotenuse: 0.00,
         }
+    }
+
+    heightHandler = heightData => {
+        this.setState({
+            height: heightData
+        })
+    }
+
+    baseHandler = baseData => {
+        this.setState({
+            base: baseData
+        })
+    }
+
+    calculateHypotenuse = (height, base) => {
+        const hypotenuse = Math.sqrt(Math.pow(height, 2) + Math.pow(base, 2));
+        return parseFloat(hypotenuse).toFixed(2);
+    }
+
+    onClickHandler = () => {
+        const { height, base } = this.state;
+        console.log(height, base);
+        this.setState({
+            hypotenuse: this.calculateHypotenuse(height, base)
+        });
     }
 
     render() {
@@ -28,9 +53,9 @@ class HypotCalculator extends React.Component {
                 </div>
                 <div className='hypot-calc-right-section'>
                     <div className='hypot-calc-input-wrapper'>
-                        <InputComponent inputLabel="Enter the height value" />
-                        <InputComponent inputLabel="Enter the base value" />
-                        <Button btnTitle="Calculate"/>
+                        <InputComponent inputLabel="Enter the height value" handler={this.heightHandler}/>
+                        <InputComponent inputLabel="Enter the base value" handler={this.baseHandler}/>
+                        <Button btnTitle="Calculate" clickHandler={this.onClickHandler}/>
                     </div>
                 </div>
             </div>
