@@ -2,6 +2,7 @@ import React from 'react';
 import Button from '../components/Button/Button';
 import Footer from '../components/Footer/Footer';
 import Header from '../components/Header/Header';
+import Hint from '../components/Hint/Hint';
 import InputComponent from '../components/InputComponent/InputComponent';
 import './HypotCalculator.css';
 
@@ -9,7 +10,9 @@ class HypotCalculator extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-
+            height: "",
+            base: "",
+            hypotenuse: "",
         }
     }
 
@@ -18,6 +21,7 @@ class HypotCalculator extends React.Component {
             <div className='hypot-calc-wrapper'>
                 <div className='hypot-calc-left-section'>
                     <Header mainText="Hypotenuse Calculator" subText="Give us the length of height and base of a right angled triangle and we would give the length of hypotenuse."/>
+                    <Hint hint="We are using the Pythagorean Theorem to find the hypotenuse"/>
                     <div className='hypot-calc-footer-wrapper'>
                         <Footer />
                     </div>
