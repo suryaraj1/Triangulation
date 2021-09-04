@@ -12,11 +12,15 @@
   height: 58px;
   width: 400px;
   outline: none;
-  background: #fafafa;
+  background: #eef3f6;
   border-radius: 5px;
   color: #282538;
   font-size: 18px;
+  transition: 0.3s ease;
+  border: 2px solid #eef3f6;
   padding: 7px 12px;
-  border: 2px solid #fafaff;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.input-box-wrapper input:focus {
+  border: 2px solid #5e97da;
 }
