@@ -1,0 +1,12 @@
+.header-main {
+  font-size: 70px;
+  font-weight: bold;
+  color: #282538;
+  margin-bottom: 20px;
+}
+
+.header-sub {
+  font-size: 26px;
+  font-weight: 700;
+  color: #b9bdcf;
+}
