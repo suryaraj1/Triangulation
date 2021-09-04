@@ -1,10 +1,10 @@
 import React from 'react';
-import Alert from '../components/Alert/Alert';
-import Button from '../components/Button/Button';
-import Footer from '../components/Footer/Footer';
-import Header from '../components/Header/Header';
-import Hint from '../components/Hint/Hint';
-import InputComponent from '../components/InputComponent/InputComponent';
+import Alert from '../../components/Alert/Alert';
+import Button from '../../components/Button/Button';
+import Footer from '../../components/Footer/Footer';
+import Header from '../../components/Header/Header';
+import Hint from '../../components/Hint/Hint';
+import InputComponent from '../../components/InputComponent/InputComponent';
 import './HypotCalculator.css';
 
 class HypotCalculator extends React.Component {
