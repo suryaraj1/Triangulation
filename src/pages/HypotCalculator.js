@@ -1,4 +1,5 @@
 import React from 'react';
+import Alert from '../components/Alert/Alert';
 import Button from '../components/Button/Button';
 import Footer from '../components/Footer/Footer';
 import Header from '../components/Header/Header';
@@ -13,6 +14,7 @@ class HypotCalculator extends React.Component {
             height: "",
             base: "",
             hypotenuse: 0.00,
+            clickCount: 0
         }
     }
 
@@ -34,14 +36,15 @@ class HypotCalculator extends React.Component {
     }
 
     onClickHandler = () => {
-        const { height, base } = this.state;
-        console.log(height, base);
+        const { height, base, clickCount } = this.state;
         this.setState({
-            hypotenuse: this.calculateHypotenuse(height, base)
+            hypotenuse: this.calculateHypotenuse(height, base),
+            clickCount: clickCount + 1
         });
     }
 
     render() {
+        const { clickCount, hypotenuse } = this.state;
         return (
             <div className='hypot-calc-wrapper'>
                 <div className='hypot-calc-left-section'>
@@ -56,6 +59,7 @@ class HypotCalculator extends React.Component {
                         <InputComponent inputLabel="Enter the height value" handler={this.heightHandler}/>
                         <InputComponent inputLabel="Enter the base value" handler={this.baseHandler}/>
                         <Button btnTitle="Calculate" clickHandler={this.onClickHandler}/>
+                        {clickCount > 0 && <Alert alertMessage={`🎉 The hypotenuse length is ${hypotenuse}`}/>}
                     </div>
                 </div>
             </div>

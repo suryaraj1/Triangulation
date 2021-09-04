@@ -1,0 +1,12 @@
+.alert-wrapper {
+  height: 58px;
+  width: 400px;
+  background: #deecfd;
+  color: #5e97da;
+  font-weight: bold;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
