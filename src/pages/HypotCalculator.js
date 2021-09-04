@@ -59,8 +59,8 @@ class HypotCalculator extends React.Component {
                         <InputComponent inputLabel="Enter the height value" handler={this.heightHandler}/>
                         <InputComponent inputLabel="Enter the base value" handler={this.baseHandler}/>
                         <Button btnTitle="Calculate" clickHandler={this.onClickHandler}/>
-                        {clickCount > 0 && <Alert alertMessage={`🎉 The hypotenuse length is ${hypotenuse}`}/>}
                     </div>
+                    {clickCount > 0 && <Alert alertMessage={`🎉 The hypotenuse length is ${hypotenuse}`}/>}
                 </div>
             </div>
         )

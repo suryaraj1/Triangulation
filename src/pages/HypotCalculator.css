@@ -36,3 +36,8 @@
   align-items: flex-start;
   margin-top: 70px;
 }
+
+.hypot-calc-right-section .alert-wrapper {
+  position: relative;
+  bottom: 50px;
+}
