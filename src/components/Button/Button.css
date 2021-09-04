@@ -1,0 +1,31 @@
+.btn-wrapper {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 30px;
+}
+
+.btn-wrapper button {
+  height: 54px;
+  padding: 8px 22px;
+  background: #5e97da;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #fafafa;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  transition: 0.4s ease;
+  font-family: "Poppins", sans-serif;
+}
+
+.btn-wrapper button:hover {
+  box-shadow: 2px 2px 20px #5e97da;
+}
+
+.btn-wrapper button:active {
+  transform: scale(0.97);
+}
