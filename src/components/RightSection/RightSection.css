@@ -1,0 +1,16 @@
+.right-section-wrapper {
+  width: 50%;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-section-grid-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+  row-gap: 40px;
+}

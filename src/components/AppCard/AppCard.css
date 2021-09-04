@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.app-card-wrapper {
+  height: 200px;
+  width: 300px;
+  background: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  padding: 15px;
+  flex-direction: column;
+  transition: 0.3s ease;
+  justify-content: space-between;
+  border: 1px solid #efefef;
+}
+
+.app-card-wrapper:hover {
+  transform: translateY(-8px);
+  box-shadow: rgb(31 35 65 / 37%) 0px 20px 30px -11px;
+}
+
+.app-card-header {
+  color: #282538;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 27px;
+}
+
+.app-card-arrow-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.app-card-arrow-wrapper svg {
+  height: 25px;
+  width: 25px;
+}
