@@ -26,10 +26,11 @@
   right: 0;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .is-triangle-input-wrapper {
-  height: 600px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -39,6 +40,7 @@
 
 .is-triangle-input-container {
   display: flex;
+  justify-content: center;
 }
 
 .is-triangle-input-container .input-label {
@@ -56,12 +58,15 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  bottom: 90px;
+  bottom: 50px;
   height: 200px;
 }
 
-.is-triangle-right-section .alert-wrapper {
+.is-triangle-validity-alert-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
   position: relative;
-  bottom: 50px;
-  margin-left: 80px;
+  bottom: 130px;
+  right: 50px;
 }
