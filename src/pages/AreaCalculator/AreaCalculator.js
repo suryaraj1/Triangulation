@@ -38,7 +38,6 @@ class AreaCalculator extends React.Component {
 
     onClickHandler = () => {
         const { height, base, clickCount } = this.state;
-        // add input validation logic here
         this.setState({
             area: this.calculateTriangleArea(height, base),
             clickCount: clickCount + 1
