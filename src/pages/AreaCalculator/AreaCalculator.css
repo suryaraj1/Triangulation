@@ -1,0 +1,43 @@
+.area-calc-left-section {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  padding: 70px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.area-calc-left-section .header-main {
+  width: 600px;
+  font-size: 60px;
+}
+
+.area-calc-left-section .header-sub {
+  width: 400px;
+  font-size: 14px;
+}
+
+.area-calc-right-section {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.area-calc-input-wrapper {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin-top: 70px;
+}
+
+.area-calc-right-section .alert-wrapper {
+  position: relative;
+  bottom: 50px;
+}
