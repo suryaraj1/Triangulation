@@ -62,7 +62,7 @@ class IsTriangle extends React.Component {
                     <BackButton />
                     <div className='is-triangle-left-section-main'>
                         <Header mainText="Is Triangle?" subText="Give us three angles, we will tell you if you can form a triangle."/>
-                        <Hint hint="The sum of all three interior angles of a triangle is 180°"/>
+                        <Hint isRuleBoard={false} hint="The sum of all three interior angles of a triangle is 180°"/>
                         <div className='is-triangle-footer-wrapper'>
                             <Footer />
                         </div>

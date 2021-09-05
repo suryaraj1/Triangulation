@@ -1,6 +1,7 @@
 import React from 'react';
 import Footer from '../../components/Footer/Footer';
 import Header from '../../components/Header/Header';
+import Hint from '../../components/Hint/Hint';
 import QuizCard from '../../components/QuizCard/QuizCard';
 import './TriangleQuiz.css';
 
@@ -113,12 +114,14 @@ class TriangleQuiz extends React.Component {
     }
     
     render() {
-        const { questionNumber, optionSelected } = this.state;
+        const { questionNumber, optionSelected, totalScore } = this.state;
+        console.log(totalScore);
         return (
             <div className='triangle-quiz-wrapper'>
                 <div className='triangle-quiz-left-section'>
                     <div className='triangle-quiz-left-section-main'>
                         <Header mainText="Triangle Quiz" subText="A quiz for triangle enthusiasts"/>
+                        <Hint isRuleBoard hint={``}/>
                         <Footer />
                     </div>
                 </div>

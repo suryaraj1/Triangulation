@@ -52,7 +52,7 @@ class HypotCalculator extends React.Component {
                     <BackButton />
                     <div className='hypot-calc-left-section-main'>
                         <Header mainText="Hypotenuse Calculator" subText="Give us the length of height and base of a right angled triangle and we would give the length of hypotenuse."/>
-                        <Hint hint="We are using the Pythagorean Theorem to find the hypotenuse"/>
+                        <Hint isRuleBoard={false} hint="We are using the Pythagorean Theorem to find the hypotenuse"/>
                         <div className='hypot-calc-footer-wrapper'>
                             <Footer />
                         </div>
