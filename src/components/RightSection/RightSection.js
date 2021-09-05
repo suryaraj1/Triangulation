@@ -2,14 +2,30 @@ import React from 'react';
 import AppCard from '../AppCard/AppCard';
 import './RightSection.css';
 
+const cardInfo = [
+    {
+        cardTitle: "Is Triangle?",
+        cardLink: ""
+    }, {
+        cardTitle: "Hypotenuse Calculator",
+        cardLink: "hypotenuse-calculator"
+    }, {
+        cardTitle: "Triangle Area Calculator",
+        cardLink: "area-calculator"
+    }, {
+        cardTitle: "Triangle Quiz",
+        link: ""
+    }
+]
+
 const RightSection = () => {
     return (
         <div className='right-section-wrapper'>
             <div className='right-section-grid-wrapper'>
-                <AppCard cardTitle="Is Triangle?"/>
-                <AppCard cardTitle="Hypotenuse Calculator" />
-                <AppCard cardTitle="Triangle Area Calculator" />
-                <AppCard cardTitle="Triangle Quiz" />
+                {cardInfo.map(info => {
+                    const { cardTitle, cardLink } = info;
+                    return <AppCard cardTitle={cardTitle} link={cardLink}/>
+                })}
             </div> 
         </div>
     )
