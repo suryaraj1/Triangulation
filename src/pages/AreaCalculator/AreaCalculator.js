@@ -52,7 +52,7 @@ class AreaCalculator extends React.Component {
                 <div className='area-calc-left-section'>
                     <BackButton />
                     <div className='area-calc-left-section-main'>
-                        <Header mainText="Triangle Area Calculator" subText=""/>
+                        <Header mainText="Triangle Area Calculator" subText="Give the height and base of the triangle and leave the rest on us."/>
                         <Hint hint="Say b = base and h = height of triangle, then area = 0.5 * b * h"/>
                         <div className='area-calc-footer-wrapper'>
                             <Footer />
