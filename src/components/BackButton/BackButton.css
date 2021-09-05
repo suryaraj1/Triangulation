@@ -1,0 +1,13 @@
+.back-button-wrapper {
+}
+
+.back-button-wrapper svg {
+  height: 20px;
+  width: 20px;
+  color: #b9bdcf;
+  transition: 0.4s ease;
+}
+
+.back-button-wrapper svg:hover {
+  color: #282538;
+}
