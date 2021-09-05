@@ -64,10 +64,13 @@
   position: absolute;
   right: 0;
   height: 380px;
-  width: 370px;
+  width: 50%;
   margin-right: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 30px;
+}
+
+.quiz-card-options {
+  width: 70%;
 }

@@ -60,18 +60,20 @@ class QuizCard extends React.Component {
                     </div>
                 </div>
                 <div className="quiz-card-right-section">
-                    {quizOptions.map((option) => {
-                        const { optionIndex, optionText, isCorrect } = option;
-                        return (
-                            <QuizOption
-                                key={optionIndex}
-                                optionIndex={optionIndex}
-                                optionText={optionText}
-                                isCorrect={isCorrect}
-                                handler={this.successHandler}
-                            />
-                        );
-                    })}
+                    <div className='quiz-card-options'>
+                        {quizOptions.map((option) => {
+                            const { optionIndex, optionText, isCorrect } = option;
+                            return (
+                                <QuizOption
+                                    key={optionIndex}
+                                    optionIndex={optionIndex}
+                                    optionText={optionText}
+                                    isCorrect={isCorrect}
+                                    handler={this.successHandler}
+                                />
+                            );
+                        })}
+                    </div>
                 </div>
             </div>
         );
