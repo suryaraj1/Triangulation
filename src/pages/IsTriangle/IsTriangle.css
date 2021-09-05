@@ -51,13 +51,13 @@
 }
 
 .is-triangle-btn-wrapper {
-  width: 100%;
+  width: 85%;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  bottom: 60px;
-  right: 50px;
+  bottom: 90px;
+  height: 200px;
 }
 
 .is-triangle-right-section .alert-wrapper {
