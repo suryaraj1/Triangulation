@@ -21,10 +21,15 @@
 }
 
 .app-card-header {
-  color: #282538;
+  color: #b9bdcf;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-size: 27px;
+  transition: 0.4s ease;
+}
+
+.app-card-wrapper:hover .app-card-header {
+  color: #282538;
 }
 
 .app-card-arrow-wrapper {
