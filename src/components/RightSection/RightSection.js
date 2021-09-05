@@ -14,7 +14,7 @@ const cardInfo = [
         cardLink: "area-calculator"
     }, {
         cardTitle: "Triangle Quiz",
-        link: ""
+        cardLink: "triangle-quiz"
     }
 ]
 
