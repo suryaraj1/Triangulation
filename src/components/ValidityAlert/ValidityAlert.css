@@ -1,0 +1,40 @@
+.validity-alert-wrapper {
+  height: 60px;
+  width: 400px;
+}
+
+.validity-alert {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.validity-alert.success {
+  background: #e7feee;
+  color: #61b37c;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.validity-alert.success svg {
+  color: #61b37c;
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+}
+
+.validity-alert.failure {
+  background: #fee7e7;
+  color: #f76e6e;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.validity-alert.failure svg {
+  color: #f76e6e;
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+}
