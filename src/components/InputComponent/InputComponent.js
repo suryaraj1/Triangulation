@@ -27,7 +27,7 @@ class InputComponent extends React.Component {
                     <p className='input-label'>{inputLabel}</p>
                 </div>
                 <div className='input-box-wrapper'>
-                    <input onChange={this.onChangeHandler}/>
+                    <input onChange={this.onChangeHandler} type="number" min="0" placeholder="0"/>
                 </div>
             </div>
         )
