@@ -25,11 +25,12 @@
 .quiz-question-wrapper {
   position: relative;
   top: 30px;
+  width: 350px;
 }
 
 .quiz-question {
   color: #282538;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
 }
 
