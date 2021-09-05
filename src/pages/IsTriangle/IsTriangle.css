@@ -12,7 +12,7 @@
 .is-triangle-left-section-main {
   display: flex;
   flex-direction: column;
-  height: 600px;
+  height: 98%;
   justify-content: space-between;
 }
 
