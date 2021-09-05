@@ -37,12 +37,11 @@ class IsTriangle extends React.Component {
         });
     }
 
+
     checkTriangleValidity = (firstAngle, secondAngle, thirdAngle) => {
-        // enter input valdation logic here
         let angleSummation = parseFloat(firstAngle);
         angleSummation += parseFloat(secondAngle);
         angleSummation += parseFloat(thirdAngle);
-        console.log(angleSummation);
         return (angleSummation === 180.00);
     }
 
@@ -77,8 +76,8 @@ class IsTriangle extends React.Component {
                         </div>
                     </div>
                     <div className='is-triangle-validity-alert-wrapper'>
-                            {clickCount > 0 && <ValidityAlert success={isValidTriangle}/>}
-                        </div>
+                        {clickCount > 0 && <ValidityAlert success={isValidTriangle}/>}
+                    </div>
                 </div>
             </div>
         )
