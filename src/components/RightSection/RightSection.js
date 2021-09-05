@@ -5,7 +5,7 @@ import './RightSection.css';
 const cardInfo = [
     {
         cardTitle: "Is Triangle?",
-        cardLink: ""
+        cardLink: "is-triangle"
     }, {
         cardTitle: "Hypotenuse Calculator",
         cardLink: "hypotenuse-calculator"
