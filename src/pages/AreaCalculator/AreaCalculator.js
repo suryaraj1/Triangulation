@@ -1,5 +1,6 @@
 import React from 'react';
 import Alert from '../../components/Alert/Alert';
+import BackButton from '../../components/BackButton/BackButton';
 import Button from '../../components/Button/Button';
 import Footer from '../../components/Footer/Footer';
 import Header from '../../components/Header/Header';
@@ -49,10 +50,13 @@ class AreaCalculator extends React.Component {
         return (
             <div className='area-calc-wrapper'>
                 <div className='area-calc-left-section'>
-                    <Header mainText="Triangle Area Calculator" subText=""/>
-                    <Hint hint="Say b = base and h = height of triangle, then area = 0.5 * b * h"/>
-                    <div className='area-calc-footer-wrapper'>
-                        <Footer />
+                    <BackButton />
+                    <div className='area-calc-left-section-main'>
+                        <Header mainText="Triangle Area Calculator" subText=""/>
+                        <Hint hint="Say b = base and h = height of triangle, then area = 0.5 * b * h"/>
+                        <div className='area-calc-footer-wrapper'>
+                            <Footer />
+                        </div>
                     </div>
                 </div>
                 <div className='area-calc-right-section'>

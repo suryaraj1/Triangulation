@@ -9,12 +9,19 @@
   align-items: flex-start;
 }
 
-.area-calc-left-section .header-main {
+.area-calc-left-section-main {
+  height: 98%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.area-calc-left-section-main .header-main {
   width: 600px;
   font-size: 60px;
 }
 
-.area-calc-left-section .header-sub {
+.area-calc-left-section-main .header-sub {
   width: 400px;
   font-size: 14px;
 }
