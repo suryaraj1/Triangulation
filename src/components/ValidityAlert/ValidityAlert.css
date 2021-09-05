@@ -1,11 +1,11 @@
 .validity-alert-wrapper {
   height: 60px;
-  width: 400px;
 }
 
 .validity-alert {
   height: 70px;
   display: flex;
+  width: 400px;
   justify-content: center;
   align-items: center;
   border-radius: 5px;

@@ -30,12 +30,12 @@
 }
 
 .is-triangle-input-wrapper {
-  height: 500px;
+  height: 60%;
   display: flex;
+  margin-top: 100px;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-start;
-  margin-top: 70px;
 }
 
 .is-triangle-input-container {
@@ -58,7 +58,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  bottom: 50px;
+  bottom: 20px;
   height: 200px;
 }
 
@@ -67,6 +67,10 @@
   display: flex;
   justify-content: center;
   position: relative;
-  bottom: 130px;
-  right: 50px;
+  bottom: 100px;
+  height: 40%;
+}
+
+.is-triangle-validity-alert-wrapper .validity-alert {
+  margin-right: 100px;
 }
