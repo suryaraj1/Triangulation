@@ -1,5 +1,6 @@
 import React from 'react';
 import Alert from '../../components/Alert/Alert';
+import BackButton from '../../components/BackButton/BackButton';
 import Button from '../../components/Button/Button';
 import Footer from '../../components/Footer/Footer';
 import Header from '../../components/Header/Header';
@@ -48,10 +49,13 @@ class HypotCalculator extends React.Component {
         return (
             <div className='hypot-calc-wrapper'>
                 <div className='hypot-calc-left-section'>
-                    <Header mainText="Hypotenuse Calculator" subText="Give us the length of height and base of a right angled triangle and we would give the length of hypotenuse."/>
-                    <Hint hint="We are using the Pythagorean Theorem to find the hypotenuse"/>
-                    <div className='hypot-calc-footer-wrapper'>
-                        <Footer />
+                    <BackButton />
+                    <div className='hypot-calc-left-section-main'>
+                        <Header mainText="Hypotenuse Calculator" subText="Give us the length of height and base of a right angled triangle and we would give the length of hypotenuse."/>
+                        <Hint hint="We are using the Pythagorean Theorem to find the hypotenuse"/>
+                        <div className='hypot-calc-footer-wrapper'>
+                            <Footer />
+                        </div>
                     </div>
                 </div>
                 <div className='hypot-calc-right-section'>

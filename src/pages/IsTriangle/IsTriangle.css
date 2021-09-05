@@ -9,12 +9,19 @@
   align-items: flex-start;
 }
 
-.is-triangle-left-section .header-main {
+.is-triangle-left-section-main {
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  justify-content: space-between;
+}
+
+.is-triangle-left-section-main .header-main {
   width: 600px;
   font-size: 60px;
 }
 
-.is-triangle-left-section .header-sub {
+.is-triangle-left-section-main .header-sub {
   width: 400px;
   font-size: 14px;
 }

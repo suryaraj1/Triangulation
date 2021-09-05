@@ -9,12 +9,19 @@
   align-items: flex-start;
 }
 
-.hypot-calc-left-section .header-main {
+.hypot-calc-left-section-main {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hypot-calc-left-section-main .header-main {
   width: 600px;
   font-size: 60px;
 }
 
-.hypot-calc-left-section .header-sub {
+.hypot-calc-left-section-main .header-sub {
   width: 400px;
   font-size: 14px;
 }
