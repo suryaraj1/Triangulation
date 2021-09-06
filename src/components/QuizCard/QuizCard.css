@@ -10,7 +10,7 @@
   position: absolute;
   width: 50%;
   height: 423px;
-  padding: 20px;
+  padding: 25px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -63,7 +63,7 @@
 .quiz-card-right-section {
   position: absolute;
   right: 0;
-  height: 380px;
+  height: 423px;
   width: 50%;
   margin-right: 30px;
   display: flex;
@@ -73,4 +73,7 @@
 
 .quiz-card-options {
   width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
