@@ -1,8 +1,10 @@
 import React from 'react';
+import BackButton from '../../components/BackButton/BackButton';
 import Footer from '../../components/Footer/Footer';
 import Header from '../../components/Header/Header';
 import Hint from '../../components/Hint/Hint';
 import QuizCard from '../../components/QuizCard/QuizCard';
+import QuizResult from '../../components/QuizResult/QuizResult';
 import './TriangleQuiz.css';
 
 const quizQuestions = [
@@ -93,6 +95,7 @@ class TriangleQuiz extends React.Component {
             questionNumber: 0,
             optionSelected: false,
             totalScore: 0,
+            quizEnded: false
         }
     }
 
@@ -105,6 +108,10 @@ class TriangleQuiz extends React.Component {
                     questionNumber: questionNumber + 1,
                     optionSelected: false, // resets for next round
                 })
+            } else {
+                this.setState({
+                    quizEnded: true
+                })
             }   
         }, 2000);
         this.setState({
@@ -114,25 +121,27 @@ class TriangleQuiz extends React.Component {
     }
     
     render() {
-        const { questionNumber, optionSelected, totalScore } = this.state;
+        const { questionNumber, optionSelected, totalScore, quizEnded } = this.state;
         console.log(totalScore);
         return (
             <div className='triangle-quiz-wrapper'>
                 <div className='triangle-quiz-left-section'>
+                    <BackButton />
                     <div className='triangle-quiz-left-section-main'>
                         <Header mainText="Triangle Quiz" subText="A quiz for triangle enthusiasts"/>
-                        <Hint isRuleBoard hint={``}/>
+                        <Hint isRuleBoard />
                         <Footer />
                     </div>
                 </div>
                 <div className='triangle-quiz-right-section'>
-                    <QuizCard 
+                    {!quizEnded ? <QuizCard 
                         questionNumber={questionNumber + 1} 
                         quizQuestion={quizQuestions[questionNumber].quizQuestion} 
                         quizOptions={quizQuestions[questionNumber].quizOptions} 
                         handler={this.questionNumberIncrementHandler}
                         answered={optionSelected}
                     />
+                    : <QuizResult quizScore={totalScore} quizQuestionCount={quizQuestions.length}/>}
                 </div>
             </div>  
         )
