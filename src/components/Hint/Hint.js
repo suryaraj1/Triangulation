@@ -29,7 +29,7 @@ class Hint extends React.Component {
                 {isClicked && (
                     <div className="hint-bottom-wrapper">
                         {!isRuleBoard ? (
-                            <div>
+                            <>
                                 <div className="hint-img-wrapper">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -47,7 +47,7 @@ class Hint extends React.Component {
                                     </svg>
                                 </div>
                                 <p className="hint-bottom-text">{hint}</p>
-                            </div>
+                            </>
                         ) : (
                             <div className='hint-bottom-rules'>
                                 {/* for the quiz rule card */} 
