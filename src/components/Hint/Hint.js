@@ -23,7 +23,7 @@ class Hint extends React.Component {
             <div className="hint-wrapper">
                 <div className="hint-top-wrapper" onClick={this.onClickHandler}>
                     <p className="hint-top-text">
-                        🤔 Click to know how we are finding this
+                        {!isRuleBoard ? "🤔 Click to know how we are finding this" : "📏 Click to know rules for the Triangle Quiz"}
                     </p>
                 </div>
                 {isClicked && (

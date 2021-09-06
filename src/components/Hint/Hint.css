@@ -12,6 +12,11 @@
   cursor: pointer;
 }
 
+.hint-top-wrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+
 .hint-bottom-wrapper {
   height: 120px;
   width: 400px;
