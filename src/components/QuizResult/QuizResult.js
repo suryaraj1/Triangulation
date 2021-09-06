@@ -1,4 +1,5 @@
 import React from 'react';
+import ResultMessage from '../ResultMessage/ResultMessage';
 import './QuizResult.css';
 
 const QuizResult = ({ quizScore, quizQuestionCount }) => {
@@ -10,6 +11,7 @@ const QuizResult = ({ quizScore, quizQuestionCount }) => {
             <div className='quiz-result-score-wrapper'>
                 <p className='quiz-result-score'>{quizScore} / {5 * quizQuestionCount}</p>
             </div>
+            <ResultMessage quizScore={quizScore}/>
         </div>
     )
 }
