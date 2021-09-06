@@ -1,0 +1,36 @@
+.result-message-wrapper {
+  height: 60px;
+  width: 300px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fafafa;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.result-message-wrapper.success {
+  background: #e7feee;
+}
+
+.result-message-wrapper.success .result-message {
+  color: #61b37c;
+}
+
+.result-message-wrapper.try-again {
+  background: #fef4e7;
+}
+
+.result-message-wrapper.try-again .result-message {
+  color: #f28f0d;
+}
+
+.result-message-wrapper.fail {
+  background: #fee7e7;
+}
+
+.result-message-wrapper.fail .result-message {
+  color: #f76e6e;
+}
