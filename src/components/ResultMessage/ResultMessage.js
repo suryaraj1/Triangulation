@@ -2,9 +2,9 @@ import React from 'react';
 import './ResultMessage.css';
 
 const renderResultMessage = quizScore => {
-    if (quizScore === 15) {
+    if (quizScore === 25) {
         return "Awesome! You're a triangle wizard!🎉";
-    } else if (quizScore >= 5 && quizScore <= 10) {
+    } else if (quizScore >= 5 && quizScore <= 20) {
         return "Good! Need to try a little hard.🚀";
     } else {
         return "No worries! Try again.😄";

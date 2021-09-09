@@ -84,7 +84,55 @@ const quizQuestions = [
                 isCorrect: false,
             },
         ],
-    },
+    }, {
+        quizQuestion: "Sum of interior angles of a triangle is - ",
+        quizOptions: [
+            {
+                optionIndex: "A",
+                optionText: "270°",
+                isCorrect: false,
+            },
+            {
+                optionIndex: "B",
+                optionText: "180°",
+                isCorrect: true,
+            },
+            {
+                optionIndex: "C",
+                optionText: "190°",
+                isCorrect: false,
+            },
+            {
+                optionIndex: "D",
+                optionText: "360°",
+                isCorrect: false,
+            }
+        ]
+    }, {
+        quizQuestion: "What is a triangle with all three sides equal called?",
+        quizOptions: [
+            {
+                optionIndex: "A",
+                optionText: "Equilateral",
+                isCorrect: true,
+            },
+            {
+                optionIndex: "B",
+                optionText: "Scalene",
+                isCorrect: false,
+            },
+            {
+                optionIndex: "C",
+                optionText: "Isosceles",
+                isCorrect: false,
+            },
+            {
+                optionIndex: "D",
+                optionText: "Obtuse",
+                isCorrect: false,
+            }
+        ]
+    }
 ];
 
 
