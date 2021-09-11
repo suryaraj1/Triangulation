@@ -15,7 +15,8 @@ class HypotCalculator extends React.Component {
             height: "",
             base: "",
             hypotenuse: 0.00,
-            clickCount: 0
+            clickCount: 0,
+            isNegative: false,
         }
     }
 
@@ -37,11 +38,19 @@ class HypotCalculator extends React.Component {
     }
 
     onClickHandler = () => {
-        const { height, base, clickCount } = this.state;
-        this.setState({
-            hypotenuse: this.calculateHypotenuse(height, base),
-            clickCount: clickCount + 1
-        });
+        const { height, base, clickCount, isNegative } = this.state;
+        if (this.isNegativeInput()) {
+            this.setState({
+                isNegative: true,
+                clickCount: clickCount + 1
+            })
+        } else {
+            this.setState({
+                hypotenuse: this.calculateHypotenuse(height, base),
+                clickCount: clickCount + 1,
+                isNegative: false
+            });
+        }
     }
 
     validateInput = () => {
@@ -49,8 +58,14 @@ class HypotCalculator extends React.Component {
         return (height !== "" && base !== "");
     }
 
+    isNegativeInput = () => {
+        const { height, base } = this.state;
+        return (height <= 0 || base <= 0);
+    }
+
     render() {
-        const { clickCount, hypotenuse } = this.state;
+        const { clickCount, hypotenuse, isNegative } = this.state;
+        console.log(isNegative);
         return (
             <div className='hypot-calc-wrapper'>
                 <div className='hypot-calc-left-section'>
@@ -69,7 +84,7 @@ class HypotCalculator extends React.Component {
                         <InputComponent inputLabel="Enter the base value" handler={this.baseHandler}/>
                         <Button btnTitle="Calculate" clickHandler={this.onClickHandler} validator={this.validateInput()}/>
                     </div>
-                    {clickCount > 0 && <Alert alertMessage={`🎉 The hypotenuse length is ${hypotenuse}`}/>}
+                    {clickCount > 0 && <Alert alertMessage={`🎉 The hypotenuse length is ${hypotenuse}`} negativeInput={isNegative}/>}
                 </div>
             </div>
         )

@@ -10,3 +10,11 @@
   align-items: center;
   font-size: 18px;
 }
+
+.alert-wrapper.fail {
+  background: #fee7e7;
+}
+
+.alert-wrapper .fail {
+  color: #f76e6e;
+}
