@@ -42,6 +42,12 @@ class AreaCalculator extends React.Component {
             area: this.calculateTriangleArea(height, base),
             clickCount: clickCount + 1
         });
+        this.validateInput();
+    }
+
+    validateInput = () => {
+        const { height, base } = this.state;
+        return (height !== "" && base !== "")
     }
 
     render() {
@@ -62,7 +68,7 @@ class AreaCalculator extends React.Component {
                     <div className='area-calc-input-wrapper'>
                         <InputComponent inputLabel="Enter the height value" handler={this.heightHandler}/>
                         <InputComponent inputLabel="Enter the base value" handler={this.baseHandler}/>
-                        <Button btnTitle="Calculate" clickHandler={this.onClickHandler}/>
+                        <Button btnTitle="Calculate" clickHandler={this.onClickHandler} validator={this.validateInput()}/>
                     </div>
                     {clickCount > 0 && <Alert alertMessage={`🎉 The area is ${area}`}/>}
                 </div>

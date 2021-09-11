@@ -22,10 +22,18 @@
   font-family: "Poppins", sans-serif;
 }
 
-.btn-wrapper button:hover {
+.btn-wrapper .active:hover {
   box-shadow: 2px 2px 20px #5e97da;
 }
 
-.btn-wrapper button:active {
+.btn-wrapper .active:active {
   transform: scale(0.97);
+}
+
+.disabled {
+  opacity: 0.5;
+}
+
+.disabled:hover {
+  box-shadow: none;
 }

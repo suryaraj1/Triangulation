@@ -54,6 +54,11 @@ class IsTriangle extends React.Component {
         })
     }
 
+    validateInput = () => {
+        const { firstAngle, secondAngle, thirdAngle } = this.state;
+        return (firstAngle !== "" && secondAngle !== "" && thirdAngle !== "");
+    }
+
     render() {
         const { clickCount, isValidTriangle } = this.state;
         return (
@@ -76,7 +81,7 @@ class IsTriangle extends React.Component {
                             <InputComponent inputLabel="Enter third angle" handler={this.thirdAngleHandler}/>
                         </div>
                         <div className='is-triangle-btn-wrapper'>
-                            <Button btnTitle="Check" clickHandler={this.onClickHandler}/>
+                            <Button btnTitle="Check" clickHandler={this.onClickHandler} validator={this.validateInput()}/>
                         </div>
                     </div>
                     <div className='is-triangle-validity-alert-wrapper'>

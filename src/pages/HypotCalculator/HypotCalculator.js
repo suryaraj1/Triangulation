@@ -44,6 +44,11 @@ class HypotCalculator extends React.Component {
         });
     }
 
+    validateInput = () => {
+        const { height, base } = this.state;
+        return (height !== "" && base !== "");
+    }
+
     render() {
         const { clickCount, hypotenuse } = this.state;
         return (
@@ -62,7 +67,7 @@ class HypotCalculator extends React.Component {
                     <div className='hypot-calc-input-wrapper'>
                         <InputComponent inputLabel="Enter the height value" handler={this.heightHandler}/>
                         <InputComponent inputLabel="Enter the base value" handler={this.baseHandler}/>
-                        <Button btnTitle="Calculate" clickHandler={this.onClickHandler}/>
+                        <Button btnTitle="Calculate" clickHandler={this.onClickHandler} validator={this.validateInput()}/>
                     </div>
                     {clickCount > 0 && <Alert alertMessage={`🎉 The hypotenuse length is ${hypotenuse}`}/>}
                 </div>

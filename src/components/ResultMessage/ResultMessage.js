@@ -12,9 +12,9 @@ const renderResultMessage = quizScore => {
 }
 
 const appendStyle = quizScore => {
-    if (quizScore === 15) {
+    if (quizScore === 25) {
         return "success";
-    } else if (quizScore >= 5 && quizScore <= 10) {
+    } else if (quizScore >= 5 && quizScore <= 20) {
         return "try-again";
     } else {
         return "fail";
