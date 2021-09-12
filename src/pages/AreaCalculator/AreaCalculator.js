@@ -38,7 +38,7 @@ class AreaCalculator extends React.Component {
     }
 
     onClickHandler = () => {
-        const { height, base, clickCount, isNegative } = this.state;
+        const { height, base, clickCount } = this.state;
         if (this.isNegativeInput()) {
             this.setState({
                 isNegative: true,
