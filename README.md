@@ -1,6 +1,6 @@
 <h1 align="center">Triangulation</h1>
 
-<p>A web app dedicated to triangles.</p>
+<p>A web app dedicated to triangles. 📐</p>
 
 ## Project Description
 >A triangle is a polygon with three edges and three vertices
