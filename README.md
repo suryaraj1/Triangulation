@@ -8,14 +8,10 @@
 
 <h2>Project Screenshots:</h2>
 
-<img src="https://gcdn.pbrd.co/images/qxI3XkXhkQIq.png?o=1" alt="shields" width="850" height="400/">
-
-<img src="https://gcdn.pbrd.co/images/zeaY5NgmffvF.png?o=1" alt="shields" width="850" height="400/">
-
-<img src="https://gcdn.pbrd.co/images/8m3QcDfDKLNy.png?o=1" alt="shields" width="850" height="400/">
-
-<img src="https://gcdn.pbrd.co/images/ivltuHI47e6I.png?o=1" alt="shields" width="850" height="400/">
-
+![Triangulation Application](https://gcdn.pbrd.co/images/qxI3XkXhkQIq.png?o=1)
+![IsTriangle Application](https://gcdn.pbrd.co/images/zeaY5NgmffvF.png?o=1)
+![Hypotenuse Application](https://gcdn.pbrd.co/images/8m3QcDfDKLNy.png?o=1)
+![Area Application](https://gcdn.pbrd.co/images/ivltuHI47e6I.png?o=1)
   
   
 <h2>💻 Built with</h2>
