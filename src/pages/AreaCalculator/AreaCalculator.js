@@ -15,7 +15,8 @@ class AreaCalculator extends React.Component {
             height: "",
             base: "",
             area: 0.0,
-            clickCount: 0
+            clickCount: 0,
+            isNegative: false
         }
     }
 
@@ -37,12 +38,24 @@ class AreaCalculator extends React.Component {
     }
 
     onClickHandler = () => {
-        const { height, base, clickCount } = this.state;
-        this.setState({
-            area: this.calculateTriangleArea(height, base),
-            clickCount: clickCount + 1
-        });
-        this.validateInput();
+        const { height, base, clickCount, isNegative } = this.state;
+        if (this.isNegativeInput()) {
+            this.setState({
+                isNegative: true,
+                clickCount: clickCount + 1
+            })
+        } else {
+            this.setState({
+                area: this.calculateTriangleArea(height, base),
+                clickCount: clickCount + 1,
+                isNegative: false
+            });
+        }
+    }
+
+    isNegativeInput = () => {
+        const { height, base } = this.state;
+        return (height <= 0 || base <= 0);
     }
 
     validateInput = () => {
@@ -51,7 +64,7 @@ class AreaCalculator extends React.Component {
     }
 
     render() {
-        const { area, clickCount } = this.state;
+        const { area, clickCount, isNegative } = this.state;
         return (
             <div className='area-calc-wrapper'>
                 <div className='area-calc-left-section'>
@@ -70,7 +83,7 @@ class AreaCalculator extends React.Component {
                         <InputComponent inputLabel="Enter the base value" handler={this.baseHandler}/>
                         <Button btnTitle="Calculate" clickHandler={this.onClickHandler} validator={this.validateInput()}/>
                     </div>
-                    {clickCount > 0 && <Alert alertMessage={`🎉 The area is ${area}`}/>}
+                    {clickCount > 0 && <Alert alertMessage={`🎉 The area is ${area}`} negativeInput={isNegative}/>}
                 </div>
             </div>
         )
